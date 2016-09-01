@@ -1,7 +1,7 @@
 package cuiods.stack;
 
 /**
- * Created by cuihao on 2016/9/1.
+ * @author cuiods
  */
 public class MazeCell {
     private int x;
