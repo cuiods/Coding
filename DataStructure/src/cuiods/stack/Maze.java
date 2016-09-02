@@ -28,6 +28,8 @@ public class Maze {
         if (x == endCell.getX() && y == endCell.getY()) {
             pathStack.pop();
             printPath();
+
+
             System.out.println("("+endCell.getX()+","+endCell.getY()+")");
             return;
         }
