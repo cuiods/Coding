@@ -12,7 +12,34 @@ public class BSTree<T extends Comparable<? super T>> {
     }
 
     public void insert(T data) {
+        BSTNode<T> p = root, prev = null;
+        while (p != null) {
+            prev = p;
+            if (p.data.compareTo(data) < 0) {
+                p = p.right;
+            } else {
+                p = p.left;
+            }
+        }
+        if (root == null) {
+            root = new BSTNode<T>(data);
+        } else if (prev.data.compareTo(data) < 0) {
+            prev.right = new BSTNode<T>(data);
+        } else {
+            prev.left = new BSTNode<T>(data);
+        }
+    }
 
+    public void inorder() {
+        inorder(root);
+    }
+
+    protected void inorder(BSTNode<T> node) {
+        if (node != null) {
+            inorder(node.left);
+            visit(node);
+            inorder(node.right);
+        }
     }
 
     protected T search(BSTNode<T> p, T data) {
@@ -26,5 +53,9 @@ public class BSTree<T extends Comparable<? super T>> {
             }
         }
         return null;
+    }
+
+    protected void visit(BSTNode<T> node) {
+        System.out.println(node.data + " ");
     }
 }
