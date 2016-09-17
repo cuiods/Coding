@@ -9,9 +9,9 @@ public abstract class SplayTree<T extends Comparable<? super T>> extends BSTree<
 
     /**
      * 处理插入时遇到相同的节点
-     * @param node 插入时已经存在的节点
+     * @param data 插入时已经存在的节点
      */
-    protected abstract void handleSame(SplayTreeNode<T> node);
+    protected abstract void handleSame(T data);
 
     @Override
     public void insert(T key) {
@@ -119,8 +119,7 @@ public abstract class SplayTree<T extends Comparable<? super T>> extends BSTree<
             else if (cmp > 0)
                 x = (SplayTreeNode<T>) x.right;
             else {
-                System.out.printf("不允许插入相同节点(%d)!\n", z.data);
-                z=null;
+                handleSame(z.data);
                 return tree;
             }
         }

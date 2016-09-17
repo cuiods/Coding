@@ -37,7 +37,7 @@ public class BSTree<T extends Comparable<? super T>> {
     protected void inorder(BSTNode<T> node) {
         if (node != null) {
             inorder(node.left);
-            visit(node);
+            visit(node.data);
             inorder(node.right);
         }
     }
@@ -55,7 +55,7 @@ public class BSTree<T extends Comparable<? super T>> {
         return null;
     }
 
-    protected void visit(BSTNode<T> node) {
-        System.out.println(node.data + " ");
+    protected void visit(T node) {
+        System.out.println(node.toString() + " ");
     }
 }
