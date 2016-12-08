@@ -19,7 +19,7 @@ import java.io.PrintWriter;
 import java.sql.*;
 import java.util.ArrayList;
 
-@WebServlet("/login.user")
+@WebServlet("/login")
 public class LoginServlet extends HttpServlet{
 
     private Context context = null;
@@ -79,7 +79,7 @@ public class LoginServlet extends HttpServlet{
             PrintWriter writer = response.getWriter();
             HttpSession session = request.getSession();
             String username = (String) session.getAttribute("username");
-            writer.println("<h1>Hi!"+username+"!</h1>");
+            writer.println("<h1>Hi!"+username+"! Click here to <a href=\"/logout\">logout</a>.</h1>");
             writer.println("<h2>Here is your scores.</h2>");
             writer.println("<table border=\"1\">");
             writer.println("<tr>\n" +
@@ -110,6 +110,10 @@ public class LoginServlet extends HttpServlet{
                     writer.println("<p>"+noScore+" 没有参加考试! </p>");
                 }
             }
+            writer.println("<h2 style=\"color:blue;\">NOTICE:</h2>");
+            writer.println("<p>在线用户："+SessionCounter.getSumUser()+"</p>");
+            writer.println("<p>登陆用户："+SessionCounter.getLogin()+"</p>");
+            writer.println("<p>游客："+SessionCounter.getVisitor()+"</p>");
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -119,6 +123,16 @@ public class LoginServlet extends HttpServlet{
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        request.getSession();
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/html/login.html");
+        if (dispatcher!=null) {
+            dispatcher.forward(request,response);
         }
     }
 
