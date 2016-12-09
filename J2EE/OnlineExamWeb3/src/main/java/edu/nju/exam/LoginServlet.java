@@ -58,7 +58,9 @@ public class LoginServlet extends HttpServlet{
                 //if correct password
                 if (psw.equals(inputpsw)) {
                     HttpSession session = request.getSession();
-                    SessionCounter.login();
+                    if (session.getAttribute("username")==null) {
+                        SessionCounter.login();
+                    }
                     session.setAttribute("username",uname);
                     session.setAttribute("sid",resultSetUser.getInt("sid"));
                 } else {//error password

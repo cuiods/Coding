@@ -19,7 +19,7 @@ import java.io.PrintWriter;
 import java.sql.*;
 import java.util.ArrayList;
 
-@WebServlet("/login.user")
+@WebServlet("/login")
 public class Login extends HttpServlet{
 
     private Context context = null;
@@ -118,6 +118,15 @@ public class Login extends HttpServlet{
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/index.html");
+        if (dispatcher!=null) {
+            dispatcher.forward(request,response);
         }
     }
 

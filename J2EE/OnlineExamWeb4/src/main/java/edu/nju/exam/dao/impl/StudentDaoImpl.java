@@ -36,13 +36,25 @@ public class StudentDaoImpl implements StudentDao {
     public StudentEntity find(int studentId) {
         Connection connection = dataHelper.getConnection();
         StudentEntity entity = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM student WHERE sid=? ");
+            preparedStatement = connection.prepareStatement("SELECT * FROM student WHERE sid=? ");
             preparedStatement.setInt(1,studentId);
-            ResultSet resultSet = preparedStatement.executeQuery();
+            resultSet = preparedStatement.executeQuery();
             entity = packageStudent(resultSet);
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            if (resultSet!=null) {
+                dataHelper.closeResultSet(resultSet);
+            }
+            if (preparedStatement!=null) {
+                dataHelper.closePreparedStatement(preparedStatement);
+            }
+            if (connection!=null) {
+                dataHelper.closeConnection(connection);
+            }
         }
         return entity;
     }
@@ -50,30 +62,54 @@ public class StudentDaoImpl implements StudentDao {
     public StudentEntity find(String studentName) {
         Connection connection = dataHelper.getConnection();
         StudentEntity entity = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM student WHERE sname=? ");
+            preparedStatement = connection.prepareStatement("SELECT * FROM student WHERE sname=? ");
             preparedStatement.setString(1,studentName);
-            ResultSet resultSet = preparedStatement.executeQuery();
+            resultSet = preparedStatement.executeQuery();
             entity = packageStudent(resultSet);
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            if (resultSet!=null) {
+                dataHelper.closeResultSet(resultSet);
+            }
+            if (preparedStatement!=null) {
+                dataHelper.closePreparedStatement(preparedStatement);
+            }
+            if (connection!=null) {
+                dataHelper.closeConnection(connection);
+            }
         }
         return entity;
     }
 
     public boolean verify(String studentName, String password) {
         Connection connection = dataHelper.getConnection();
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
         try {
-            PreparedStatement statement =
+            statement =
                     connection.prepareStatement("SELECT * FROM student WHERE sname=? AND password=? ");
             statement.setString(1,studentName);
             statement.setString(2,password);
-            ResultSet resultSet = statement.executeQuery();
+            resultSet = statement.executeQuery();
             if (resultSet!=null && resultSet.next()) {
                 return true;
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            if (resultSet!=null) {
+                dataHelper.closeResultSet(resultSet);
+            }
+            if (statement!=null) {
+                dataHelper.closePreparedStatement(statement);
+            }
+            if (connection!=null) {
+                dataHelper.closeConnection(connection);
+            }
         }
         return false;
     }

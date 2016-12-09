@@ -38,11 +38,13 @@ public class ScoreDaoImpl implements ScoreDao {
     public List<ScoreEntity> findList(int studentId) {
         List<ScoreEntity> scoreEntities = new ArrayList<ScoreEntity>();
         Connection connection = dataHelper.getConnection();
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
         try {
-            PreparedStatement statement =
+            statement =
                     connection.prepareStatement("SELECT * FROM v_score WHERE sid=? ");
             statement.setInt(1,studentId);
-            ResultSet resultSet = statement.executeQuery();
+            resultSet = statement.executeQuery();
             while (resultSet!=null && resultSet.next()) {
                 ScoreEntity scoreEntity = new ScoreEntity();
                 scoreEntity.setStudentId(resultSet.getInt("sid"));
@@ -58,6 +60,16 @@ public class ScoreDaoImpl implements ScoreDao {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            if (resultSet!=null) {
+                dataHelper.closeResultSet(resultSet);
+            }
+            if (statement!=null) {
+                dataHelper.closePreparedStatement(statement);
+            }
+            if (connection!=null) {
+                dataHelper.closeConnection(connection);
+            }
         }
         return scoreEntities;
     }
