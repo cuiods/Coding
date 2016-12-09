@@ -2,44 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f408fbf2-5886-4e24-9712-30e4c7e3a07b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3a6f1405-7628-49a0-ba72-39fd2b0e67a8/_metadata_/metadata.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/nju/exam/factory/DaoFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/nju/exam/factory/DaoFactoryImpl.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/edu/nju/exam/dao/impl/StudentDaoImplTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb/target/classes/edu/nju/exam/Login.class" afterPath="$PROJECT_DIR$/../OnlineExamWeb/target/classes/edu/nju/exam/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb/target/onlineExamWeb/WEB-INF/classes/edu/nju/exam/Login.class" afterPath="$PROJECT_DIR$/../OnlineExamWeb/target/onlineExamWeb/WEB-INF/classes/edu/nju/exam/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb3/target/classes/edu/nju/exam/LoginServlet.class" afterPath="$PROJECT_DIR$/../OnlineExamWeb3/target/classes/edu/nju/exam/LoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb3/target/classes/edu/nju/exam/UserListenner.class" afterPath="$PROJECT_DIR$/../OnlineExamWeb3/target/classes/edu/nju/exam/UserListenner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb3/target/onlineExamWeb/WEB-INF/classes/edu/nju/exam/LoginServlet.class" afterPath="$PROJECT_DIR$/../OnlineExamWeb3/target/onlineExamWeb/WEB-INF/classes/edu/nju/exam/LoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb3/target/onlineExamWeb/WEB-INF/classes/edu/nju/exam/UserListenner.class" afterPath="$PROJECT_DIR$/../OnlineExamWeb3/target/onlineExamWeb/WEB-INF/classes/edu/nju/exam/UserListenner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/3a6f1405-7628-49a0-ba72-39fd2b0e67a8/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/3a6f1405-7628-49a0-ba72-39fd2b0e67a8/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/3a6f1405-7628-49a0-ba72-39fd2b0e67a8/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/.idea/dataSources/3a6f1405-7628-49a0-ba72-39fd2b0e67a8/_metadata_/metadata.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/3a6f1405-7628-49a0-ba72-39fd2b0e67a8/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/.idea/dataSources/3a6f1405-7628-49a0-ba72-39fd2b0e67a8/_metadata_/metadata.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/3a6f1405-7628-49a0-ba72-39fd2b0e67a8/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/.idea/dataSources/3a6f1405-7628-49a0-ba72-39fd2b0e67a8/_metadata_/metadata.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/3a6f1405-7628-49a0-ba72-39fd2b0e67a8/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/.idea/dataSources/3a6f1405-7628-49a0-ba72-39fd2b0e67a8/_metadata_/metadata_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/3a6f1405-7628-49a0-ba72-39fd2b0e67a8/_metadata_/metadata_i.len" afterPath="$PROJECT_DIR$/.idea/dataSources/3a6f1405-7628-49a0-ba72-39fd2b0e67a8/_metadata_/metadata_i.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/nju/exam/controller/LoginServlet.class" afterPath="$PROJECT_DIR$/target/classes/edu/nju/exam/controller/LoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/nju/exam/dao/impl/ScoreDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/edu/nju/exam/dao/impl/ScoreDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/nju/exam/dao/impl/StudentDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/edu/nju/exam/dao/impl/StudentDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/nju/exam/filter/CharacterFilter.class" afterPath="$PROJECT_DIR$/target/classes/edu/nju/exam/filter/CharacterFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/onlineExamWeb/WEB-INF/classes/edu/nju/exam/controller/LoginServlet.class" afterPath="$PROJECT_DIR$/target/onlineExamWeb/WEB-INF/classes/edu/nju/exam/controller/LoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/onlineExamWeb/WEB-INF/classes/edu/nju/exam/dao/impl/ScoreDaoImpl.class" afterPath="$PROJECT_DIR$/target/onlineExamWeb/WEB-INF/classes/edu/nju/exam/dao/impl/ScoreDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/onlineExamWeb/WEB-INF/classes/edu/nju/exam/dao/impl/StudentDaoImpl.class" afterPath="$PROJECT_DIR$/target/onlineExamWeb/WEB-INF/classes/edu/nju/exam/dao/impl/StudentDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/onlineExamWeb/WEB-INF/classes/edu/nju/exam/filter/CharacterFilter.class" afterPath="$PROJECT_DIR$/target/onlineExamWeb/WEB-INF/classes/edu/nju/exam/filter/CharacterFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb/.idea/misc.xml" afterPath="$PROJECT_DIR$/../OnlineExamWeb/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../OnlineExamWeb/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb/OnlineExamWeb.iml" afterPath="$PROJECT_DIR$/../OnlineExamWeb/OnlineExamWeb.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb/src/main/java/edu/nju/exam/Login.java" afterPath="$PROJECT_DIR$/../OnlineExamWeb/src/main/java/edu/nju/exam/Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/../OnlineExamWeb/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb/target/onlineExamWeb/index.html" afterPath="$PROJECT_DIR$/../OnlineExamWeb/target/onlineExamWeb/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb3/.idea/misc.xml" afterPath="$PROJECT_DIR$/../OnlineExamWeb3/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../OnlineExamWeb3/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OnlineExamWeb3/src/main/java/edu/nju/exam/LoginServlet.java" afterPath="$PROJECT_DIR$/../OnlineExamWeb3/src/main/java/edu/nju/exam/LoginServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/nju/exam/controller/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/edu/nju/exam/controller/LoginServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/nju/exam/dao/impl/ScoreDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/edu/nju/exam/dao/impl/ScoreDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/nju/exam/dao/impl/StudentDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/edu/nju/exam/dao/impl/StudentDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
     </list>
     <ignored path="OnlineExamWeb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1141,8 +1104,16 @@
       <workItem from="1481195823025" duration="5737000" />
       <workItem from="1481208330743" duration="1589000" />
       <workItem from="1481245414641" duration="7558000" />
-      <workItem from="1481270893672" duration="4092000" />
+      <workItem from="1481270893672" duration="4175000" />
     </task>
+    <task id="LOCAL-00001" summary="有点不会写了  去看书">
+      <created>1481285580293</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1481285580293</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1160,7 +1131,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46250000" />
+    <option name="totallyTimeSpent" value="46333000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1254,6 +1225,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="有点不会写了  去看书" />
+    <option name="LAST_COMMIT_MESSAGE" value="有点不会写了  去看书" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
