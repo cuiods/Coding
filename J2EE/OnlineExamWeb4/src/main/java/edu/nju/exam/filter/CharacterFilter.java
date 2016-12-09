@@ -2,7 +2,6 @@ package edu.nju.exam.filter;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
