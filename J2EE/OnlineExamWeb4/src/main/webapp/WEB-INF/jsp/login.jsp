@@ -9,16 +9,16 @@
 <html>
 <body>
 <div>
-    <h2>Welcome! Please login to view your scores.</h2>
+    <h2>欢迎！请登录后查看考试成绩。</h2>
     <form action="/login" method="post">
         <fieldset style="max-width: 400px">
-            <legend>name and password</legend>
+            <legend>用户名和密码</legend>
             <p>
-                <label for="username">Username:</label>
+                <label for="username">用户名:</label>
                 <input type="text" name="username" id="username" required="" />
             </p>
             <p>
-                <label for="password">Password:</label>
+                <label for="password">密码:</label>
                 <input type="password" name="password" id="password" required=""/>
             </p>
             <p style="text-align: right">

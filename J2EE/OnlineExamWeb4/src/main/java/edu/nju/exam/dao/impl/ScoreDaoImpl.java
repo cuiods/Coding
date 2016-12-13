@@ -52,7 +52,7 @@ public class ScoreDaoImpl implements ScoreDao {
                 scoreEntity.setCourseName(resultSet.getString("cname"));
                 String scoreStr = resultSet.getString("score");
                 int score = -1;
-                if (!scoreStr.equals("null")) {
+                if (scoreStr!=null && !scoreStr.equals("null")) {
                     score = Integer.parseInt(scoreStr);
                 }
                 scoreEntity.setScore(score);
