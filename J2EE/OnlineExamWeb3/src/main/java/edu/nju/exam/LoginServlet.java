@@ -1,8 +1,5 @@
 package edu.nju.exam;
 
-import com.sun.deploy.net.HttpRequest;
-import com.sun.deploy.net.HttpResponse;
-
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -70,7 +67,7 @@ public class LoginServlet extends HttpServlet{
                 error_404(request,response);
             }
             //get scores
-            statement = connection.prepareStatement("SELECT course.cid AS courseId,course.cname AS cname,score.score AS score " +
+            statement = connection.prepareStatement("SELECT course.cid AS courseId,course.cname AS cname,score.score AS score,score.type AS type " +
                     "FROM student " +
                     "JOIN score ON student.sid=score.sid " +
                     "JOIN course ON score.cid=course.cid " +
@@ -87,6 +84,7 @@ public class LoginServlet extends HttpServlet{
             writer.println("<tr>\n" +
                     "<th>Course</th>\n" +
                     "<th>Score</th>\n" +
+                    "<th>Type</th>\n" +
                     "</tr>");
             ArrayList<String> noScoreCourses = new ArrayList<String>();
             while (resultSetScore.next()) {
@@ -103,6 +101,7 @@ public class LoginServlet extends HttpServlet{
                 writer.println("<tr>\n" +
                         "<td>"+resultSetScore.getString("cname")+"</td>\n" +
                         "<td style=\"color:"+color+";\">"+scoreStr+"</td>\n" +
+                        "<td>"+resultSetScore.getString("type")+"</td>\n" +
                         "</tr>");
             }
             writer.println("</table>");

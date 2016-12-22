@@ -17,6 +17,7 @@ public class CharacterFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         servletResponse.setCharacterEncoding("UTF-8");
         filterChain.doFilter(servletRequest, servletResponse);
+        servletResponse.setCharacterEncoding("UTF-8");
     }
 
     public void destroy() {
