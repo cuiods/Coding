@@ -56,6 +56,7 @@ public class ScoreDaoImpl implements ScoreDao {
                     score = Integer.parseInt(scoreStr);
                 }
                 scoreEntity.setScore(score);
+                scoreEntity.setType(resultSet.getString("type"));
                 scoreEntities.add(scoreEntity);
             }
         } catch (SQLException e) {

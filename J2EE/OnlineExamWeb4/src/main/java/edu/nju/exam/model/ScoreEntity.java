@@ -10,6 +10,7 @@ public class ScoreEntity implements Serializable{
     private int courseId;
     private String courseName;
     private int score;
+    private String type;
 
     public int getStudentId() {
         return studentId;
@@ -41,5 +42,13 @@ public class ScoreEntity implements Serializable{
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }

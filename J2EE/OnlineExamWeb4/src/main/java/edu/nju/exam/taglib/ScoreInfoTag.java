@@ -26,7 +26,7 @@ public class ScoreInfoTag extends TagSupport{
                 return SKIP_BODY;
             }
             writer.println("<table border=\"1\">");
-            writer.println("<tr>\n<th>课程</th>\n<th>分数</th>\n</tr>");
+            writer.println("<tr>\n<th>课程</th>\n<th>分数</th>\n<th>类型</th>\n</tr>");
             ArrayList<String> noScoreCourses = new ArrayList<String>();
             scoreEntities.forEach(scoreEntity -> showSingleScore(scoreEntity,writer,noScoreCourses));
             writer.println("</table>");
@@ -84,6 +84,7 @@ public class ScoreInfoTag extends TagSupport{
             writer.println("<tr>\n" +
                     "<td>"+scoreEntity.getCourseName()+"</td>\n" +
                     "<td style=\"color:"+color+";\">"+scoreStr+"</td>\n" +
+                    "<td>"+scoreEntity.getType()+"</td>\n"+
                     "</tr>");
         } catch (IOException e) {
             e.printStackTrace();
