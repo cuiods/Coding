@@ -11,6 +11,7 @@
     <title>Score Info</title>
 </head>
 <body>
+<score:checkSession/>
 <h1>欢迎，${username}! 点击这里 <a href="/logout">退出登录</a>.</h1>
 <h2>你的课程分数是：</h2>
 <score:showScoreInfo scoreEntities="${scoreList.scoreEntities}"/>

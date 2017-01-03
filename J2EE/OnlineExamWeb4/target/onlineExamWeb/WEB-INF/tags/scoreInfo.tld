@@ -23,4 +23,12 @@
         </attribute>
     </tag>
 
+    <tag>
+        <name>checkSession</name>
+
+        <tag-class>edu.nju.exam.taglib.AuthTag</tag-class>
+
+        <body-content>empty</body-content>
+    </tag>
+
 </taglib>
