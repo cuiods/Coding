@@ -1,9 +1,6 @@
-target/
-.metadata/
-.recommenders/
-RemoteSystemsTempFiles/
-
-
+/build/
+.tern-project
+out/
 ### STS ###
 .classpath
 .factorypath
@@ -16,4 +13,3 @@ RemoteSystemsTempFiles/
 *.iws
 *.iml
 *.ipr
-
