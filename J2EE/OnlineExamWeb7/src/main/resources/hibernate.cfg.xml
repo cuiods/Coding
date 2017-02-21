@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/examweb?serverTimezone=UTC</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">cuiods</property>
+        <property name="connection.password">0628</property>
+        <!-- 配置hibernate的基本信息 -->
+
+        <!-- 配置数据库方言dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <!-- 指定自动生成数据表的策略 -->
+        <property name="hbm2ddl.auto">update</property>
+        <mapping class="edu.nju.exam.entity.CourseEntity"/>
+        <mapping class="edu.nju.exam.entity.ScoreEntity"/>
+        <mapping class="edu.nju.exam.entity.StudentEntity"/>
+        <mapping class="edu.nju.exam.entity.VScoreEntity"/>
+    </session-factory>
+</hibernate-configuration>
