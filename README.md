@@ -33,6 +33,10 @@ Coding
 /3: 接受键盘输入回显到屏幕<br>
 /4: PV操作解决睡眠理发师问题<br>
 
+#/user-dashboard: 用户CRUD控制台
+基于React+Redux的dva框架的教学示例<br>
+运行项目：`npm run start`<br>
+
 #/Python: 软件工程统计方法课程练习
 用python解决概率论与数理统计问题
 
